@@ -6,160 +6,115 @@
   <title>Your Name | Portfolio</title>
 
   <style>
-    :root{
-      --bg:#0b1220;
-      --card:#121c2e;
-      --text:#e5e7eb;
-      --muted:#9ca3af;
-      --accent:#38bdf8;
-      --border:rgba(255,255,255,0.08);
-    }
-
     *{ margin:0; padding:0; box-sizing:border-box; }
 
     body{
       font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      background: white;
+      color: black;
       line-height: 1.6;
     }
-
-    a{ color: var(--accent); text-decoration:none; }
-    a:hover{ text-decoration: underline; }
 
     .container{
       width: min(1000px, 92%);
       margin: auto;
     }
 
-    /* Navbar */
     nav{
       position: sticky;
       top: 0;
-      background: rgba(11,18,32,0.85);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
-      z-index: 10;
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 14px 0;
     }
 
     .nav-inner{
       display:flex;
       justify-content: space-between;
       align-items:center;
-      padding: 14px 0;
     }
 
     .logo{
       font-weight: 800;
-      letter-spacing: 0.5px;
+      font-size: 18px;
     }
 
     .nav-links a{
       margin-left: 16px;
       font-size: 14px;
-      color: var(--text);
-      opacity: 0.9;
-    }
-
-    .nav-links a:hover{
-      opacity: 1;
-      color: var(--accent);
+      color: black;
       text-decoration: none;
     }
 
-    /* Sections */
+    .nav-links a:hover{
+      text-decoration: underline;
+    }
+
     section{
-      padding: 70px 0;
+      padding: 60px 0;
     }
 
-    .card{
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 22px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-    }
-
-    /* Hero */
-    .hero{
-      padding-top: 90px;
-    }
-
-    .hero h1{
-      font-size: clamp(28px, 4vw, 48px);
+    h1{
+      font-size: 40px;
       margin-bottom: 10px;
     }
 
-    .hero p{
-      color: var(--muted);
+    h2{
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    p{
       font-size: 16px;
-      max-width: 700px;
     }
 
     .btns{
       margin-top: 18px;
       display:flex;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
     }
 
     .btn{
-      display:inline-block;
-      padding: 10px 16px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: transparent;
-      color: var(--text);
+      padding: 10px 14px;
+      border: 1px solid black;
+      background: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
       font-weight: 600;
     }
 
-    .btn.primary{
-      background: var(--accent);
-      color: #001018;
-      border: none;
-    }
-
     .btn:hover{
-      transform: translateY(-1px);
-      transition: 0.15s ease;
-      text-decoration: none;
+      background: black;
+      color: white;
+      transition: 0.2s;
     }
 
-    /* Grid */
+    .card{
+      border: 1px solid #ddd;
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 12px;
+    }
+
     .grid{
       display:grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-top: 16px;
+      gap: 14px;
     }
 
     @media(max-width: 700px){
       .grid{ grid-template-columns: 1fr; }
-    }
-
-    .title{
-      font-size: 22px;
-      margin-bottom: 12px;
-    }
-
-    .muted{ color: var(--muted); }
-
-    .tag{
-      display:inline-block;
-      padding: 6px 10px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      font-size: 12px;
-      color: var(--muted);
-      margin: 6px 6px 0 0;
+      h1{ font-size: 32px; }
     }
 
     footer{
-      padding: 30px 0;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid #ddd;
+      padding: 20px 0;
       text-align: center;
-      color: var(--muted);
       font-size: 14px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -181,21 +136,17 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero">
+  <section>
     <div class="container">
-      <div class="card">
-        <h1>Hi, I’m <span style="color: var(--accent);">Your Name</span> 👋</h1>
-        <p>
-          I’m a Computer Science student who loves coding, building projects, and learning AI + Cybersecurity.
-          This is my simple portfolio hosted on GitHub Pages.
-        </p>
+      <h1>Hi, I’m Your Name 👋</h1>
+      <p>
+        I’m a CSE student who loves coding, building projects, and learning new tech.
+        This is my basic portfolio website hosted on GitHub Pages.
+      </p>
 
-        <div class="btns">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="#contact">Contact Me</a>
-          <!-- Put your CV file link if you upload it -->
-          <!-- <a class="btn" href="cv.pdf" target="_blank">Download CV</a> -->
-        </div>
+      <div class="btns">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn" href="#contact">Contact</a>
       </div>
     </div>
   </section>
@@ -203,14 +154,11 @@
   <!-- About -->
   <section id="about">
     <div class="container">
-      <h2 class="title">About Me</h2>
+      <h2>About Me</h2>
       <div class="card">
-        <p class="muted">
-          Write a short intro here. Example:
-        </p>
         <p>
-          I’m a CSE student from Bangladesh. I enjoy solving problems, learning how computers work (OS, compilers, networks),
-          and building cool stuff like OpenGL projects, tools, and small apps.
+          Write about yourself here. Example: I enjoy C/C++, Java, Python, OpenGL,
+          and I’m exploring AI + cybersecurity.
         </p>
       </div>
     </div>
@@ -219,16 +167,11 @@
   <!-- Skills -->
   <section id="skills">
     <div class="container">
-      <h2 class="title">Skills</h2>
+      <h2>Skills</h2>
       <div class="card">
-        <span class="tag">C / C++</span>
-        <span class="tag">Java</span>
-        <span class="tag">Python</span>
-        <span class="tag">Git & GitHub</span>
-        <span class="tag">OpenGL (learning)</span>
-        <span class="tag">Cybersecurity (learning)</span>
-        <span class="tag">Photoshop</span>
-        <span class="tag">Illustrator</span>
+        <p><b>Programming:</b> C, C++, Java, Python</p>
+        <p><b>Tools:</b> Git, GitHub, VS Code</p>
+        <p><b>Design:</b> Photoshop, Illustrator</p>
       </div>
     </div>
   </section>
@@ -236,65 +179,52 @@
   <!-- Projects -->
   <section id="projects">
     <div class="container">
-      <h2 class="title">Projects</h2>
+      <h2>Projects</h2>
 
       <div class="grid">
         <div class="card">
-          <h3>Project 1 - Title</h3>
-          <p class="muted">Short description of what it does.</p>
-          <p>
-            <a href="#" target="_blank">GitHub Repo</a> •
-            <a href="#" target="_blank">Live Demo</a>
-          </p>
+          <h3>Project 1</h3>
+          <p>Short description of your project.</p>
+          <p><a href="#">GitHub Repo</a></p>
         </div>
 
         <div class="card">
-          <h3>Project 2 - Title</h3>
-          <p class="muted">Short description of what it does.</p>
-          <p>
-            <a href="#" target="_blank">GitHub Repo</a> •
-            <a href="#" target="_blank">Live Demo</a>
-          </p>
+          <h3>Project 2</h3>
+          <p>Short description of your project.</p>
+          <p><a href="#">GitHub Repo</a></p>
         </div>
 
         <div class="card">
-          <h3>Project 3 - Title</h3>
-          <p class="muted">Short description of what it does.</p>
-          <p>
-            <a href="#" target="_blank">GitHub Repo</a> •
-            <a href="#" target="_blank">Live Demo</a>
-          </p>
+          <h3>Project 3</h3>
+          <p>Short description of your project.</p>
+          <p><a href="#">GitHub Repo</a></p>
         </div>
 
         <div class="card">
-          <h3>Project 4 - Title</h3>
-          <p class="muted">Short description of what it does.</p>
-          <p>
-            <a href="#" target="_blank">GitHub Repo</a> •
-            <a href="#" target="_blank">Live Demo</a>
-          </p>
+          <h3>Project 4</h3>
+          <p>Short description of your project.</p>
+          <p><a href="#">GitHub Repo</a></p>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- Contact -->
   <section id="contact">
     <div class="container">
-      <h2 class="title">Contact</h2>
+      <h2>Contact</h2>
       <div class="card">
-        <p class="muted">You can reach me here:</p>
-
-        <p>📧 Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
-        <p>🐙 GitHub: <a href="https://github.com/0xYOGURT" target="_blank">github.com/0xYOGURT</a></p>
-        <p>💼 LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></p>
+        <p>Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/0xYOGURT" target="_blank">github.com/0xYOGURT</a></p>
+        <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></p>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>© 2026 Your Name — Built with HTML + CSS and hosted on GitHub Pages</p>
+      <p>© 2026 Your Name</p>
     </div>
   </footer>
 
