@@ -1,232 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
-
-  <style>
-    *{ margin:0; padding:0; box-sizing:border-box; }
-
-    body{
-      font-family: Arial, Helvetica, sans-serif;
-      background: white;
-      color: black;
-      line-height: 1.6;
-    }
-
-    .container{
-      width: min(1000px, 92%);
-      margin: auto;
-    }
-
-    nav{
-      position: sticky;
-      top: 0;
-      background: white;
-      border-bottom: 1px solid #ddd;
-      padding: 14px 0;
-    }
-
-    .nav-inner{
-      display:flex;
-      justify-content: space-between;
-      align-items:center;
-    }
-
-    .logo{
-      font-weight: 800;
-      font-size: 18px;
-    }
-
-    .nav-links a{
-      margin-left: 16px;
-      font-size: 14px;
-      color: black;
-      text-decoration: none;
-    }
-
-    .nav-links a:hover{
-      text-decoration: underline;
-    }
-
-    section{
-      padding: 60px 0;
-    }
-
-    h1{
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-
-    h2{
-      font-size: 24px;
-      margin-bottom: 14px;
-    }
-
-    p{
-      font-size: 16px;
-    }
-
-    .btns{
-      margin-top: 18px;
-      display:flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .btn{
-      padding: 10px 14px;
-      border: 1px solid black;
-      background: white;
-      color: black;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-    }
-
-    .btn:hover{
-      background: black;
-      color: white;
-      transition: 0.2s;
-    }
-
-    .card{
-      border: 1px solid #ddd;
-      padding: 18px;
-      border-radius: 12px;
-      margin-top: 12px;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
-
-    @media(max-width: 700px){
-      .grid{ grid-template-columns: 1fr; }
-      h1{ font-size: 32px; }
-    }
-
-    footer{
-      border-top: 1px solid #ddd;
-      padding: 20px 0;
-      text-align: center;
-      font-size: 14px;
-      margin-top: 40px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Debabrata NATH Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="container nav-inner">
-      <div class="logo">YourName</div>
+<!-- Canvas background -->
+<canvas id="bg"></canvas>
 
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+<!-- NAVBAR -->
+<nav>
+  <div class="container nav-inner">
+    <div class="logo">Debabrata NATH</div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Hero -->
-  <section>
-    <div class="container">
-      <h1>Hi, I’m Your Name 👋</h1>
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Hi, I’m Debabrata NATH</h1>
       <p>
         I’m a CSE student who loves coding, building projects, and learning new tech.
         This is my basic portfolio website hosted on GitHub Pages.
       </p>
-
       <div class="btns">
         <a class="btn" href="#projects">View Projects</a>
         <a class="btn" href="#contact">Contact</a>
       </div>
     </div>
-  </section>
+    <div class="hero-image">
+      <!-- CHANGE THIS IMAGE -->
+      <img src="myimage.png" alt="My Image">
+    </div>
+  </div>
+</section>
 
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I enjoy C/C++, Java, Python, OpenGL, and I’m exploring AI + cybersecurity.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="card">
+      <p><b>Programming:</b> C, C++, Java, Python</p>
+      <p><b>Tools:</b> Git, GitHub, VS Code</p>
+      <p><b>Design:</b> Photoshop, Illustrator</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="grid">
       <div class="card">
-        <p>
-          Write about yourself here. Example: I enjoy C/C++, Java, Python, OpenGL,
-          and I’m exploring AI + cybersecurity.
-        </p>
+        <h3>Project 1</h3>
+        <p>Short description of your project.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
       <div class="card">
-        <p><b>Programming:</b> C, C++, Java, Python</p>
-        <p><b>Tools:</b> Git, GitHub, VS Code</p>
-        <p><b>Design:</b> Photoshop, Illustrator</p>
+        <h3>Project 2</h3>
+        <p>Short description of your project.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Project 1</h3>
-          <p>Short description of your project.</p>
-          <p><a href="#">GitHub Repo</a></p>
-        </div>
-
-        <div class="card">
-          <h3>Project 2</h3>
-          <p>Short description of your project.</p>
-          <p><a href="#">GitHub Repo</a></p>
-        </div>
-
-        <div class="card">
-          <h3>Project 3</h3>
-          <p>Short description of your project.</p>
-          <p><a href="#">GitHub Repo</a></p>
-        </div>
-
-        <div class="card">
-          <h3>Project 4</h3>
-          <p>Short description of your project.</p>
-          <p><a href="#">GitHub Repo</a></p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
       <div class="card">
-        <p>Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/0xYOGURT" target="_blank">github.com/0xYOGURT</a></p>
-        <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></p>
+        <h3>Project 3</h3>
+        <p>Short description of your project.</p>
+      </div>
+      <div class="card">
+        <h3>Project 4</h3>
+        <p>Short description of your project.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <div class="container">
-      <p>© 2026 Your Name</p>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: youremail@gmail.com</p>
+      <p>GitHub: github.com/0xYOGURT</p>
     </div>
-  </footer>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Debabrata Nath</p>
+  </div>
+</footer>
+
+<!-- Link JS -->
+<script src="script.js"></script>
 
 </body>
 </html>
