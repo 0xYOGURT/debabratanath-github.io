@@ -48,7 +48,7 @@ body {
 
 /* NAVBAR */
 nav{
-  position: sticky;
+  position: relative;
   top: 0;
   background: black;
   padding: 14px 0;
