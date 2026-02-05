@@ -49,7 +49,7 @@ body {
 /* NAVBAR */
 nav {
   position: relative; /* default, scrolls with page */
-  background: white;
+  background: black;
   border-bottom: 1px solid #ddd;
   padding: 14px 0;
   border-image: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet) 1;
