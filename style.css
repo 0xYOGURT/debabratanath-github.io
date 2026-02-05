@@ -47,14 +47,14 @@ body {
 }
 
 /* NAVBAR */
-nav{
-  position: relative;
-  top: 0;
-  background: black;
+nav {
+  position: relative; /* default, scrolls with page */
+  background: white;
+  border-bottom: 1px solid #ddd;
   padding: 14px 0;
-  border-bottom: 2px solid transparent;
   border-image: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet) 1;
 }
+
 .nav-inner{
   display:flex;
   justify-content:space-between;
