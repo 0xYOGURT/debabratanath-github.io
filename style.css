@@ -136,7 +136,7 @@ nav{
   background:white;
   color:black;
   outline:1px solid black;
-}
+} 
 
 /* ===============================
    SECTIONS
@@ -204,11 +204,11 @@ h2{
   justify-content: space-between;
   padding: 20px;
   border-radius: 12px;
-  background: #f9f9f9;
+  background: white;
   min-width: 140px;
   transition: all 0.3s ease;
 }
-
+/*
 .contact-item:hover {
   background: #f0f0f0;
   transform: translateY(-4px);
@@ -221,7 +221,7 @@ h2{
   color: #333;
   font-weight: 600;
 }
-
+ */
 
 /* ===============================
    FOOTER
