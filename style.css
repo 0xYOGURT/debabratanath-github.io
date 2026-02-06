@@ -133,7 +133,7 @@ nav {
   }
 }
 
- /* ===== HERO SECTION STYLES ===== */
+/* ===== HERO SECTION STYLES ===== */
 
 .hero {
   background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
@@ -151,9 +151,9 @@ nav {
 }
 
 /* Left Content */
-/* .hero-content {
+.hero-content {
   animation: fadeInLeft 0.8s ease-out;
-} */
+}
 
 .badge {
   display: inline-block;
@@ -231,8 +231,7 @@ nav {
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
-  transition: color 0.3s ease;
-  
+  transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
@@ -240,9 +239,9 @@ nav {
 }
 
 /* Right Visual */
-/* .hero-visual {
+.hero-visual {
   animation: fadeInRight 0.8s ease-out;
-} */
+}
 
 .hero-image-container {
   background: linear-gradient(135deg, #7c8d8e 0%, #a4b5b6 100%);
@@ -349,51 +348,6 @@ nav {
   }
 }
 
-/* Responsive Design */
-@media (max-width: 968px) {
-  .hero-inner {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .hero-description {
-    max-width: 100%;
-  }
-
-  .hero-image-container {
-    padding: 32px;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero {
-    padding: 60px 0;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .badge {
-    font-size: 0.7rem;
-    padding: 6px 16px;
-  }
-
-  .cta-buttons {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .btn-primary {
-    padding: 12px 24px;
-    font-size: 0.95rem;
-  }
-}
-
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Tablet */
@@ -462,44 +416,6 @@ nav {
     align-items: stretch;
     gap: 12px;
     width: 100%;
-
-
-  }
-
-
-  
-
-  /* Make buttons side-by-side on mobile */
-.cta-buttons {
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-}
-
-.btn-primary,
-.btn-secondary {
-  width: 48%;
-  justify-content: center;
-  text-align: center;
-}
-
-/* Style secondary like outlined button */
-.btn-secondary {
-  background: white;
-  color: #4339f2;
-  padding: 14px 32px;
-  border-radius: 30px;
-  border: 2px solid #4339f2;
-  font-weight: 500;
-  box-shadow: 0 2px 10px rgba(67, 57, 242, 0.1);
-}
-
-.btn-secondary:hover {
-  background: #f5f7fa;
-  color: #4339f2;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(67, 57, 242, 0.2);
-}
   }
 
   /* Make "View My Work" button styled like primary on mobile */
@@ -525,7 +441,7 @@ nav {
     width: 100%;
     justify-content: center;
   }
-
+}
 
 /* Small mobile */
 @media (max-width: 640px) {
@@ -542,25 +458,6 @@ nav {
     padding: 12px 24px;
     font-size: 0.95rem;
   }
-  @media (max-width:700px){
-
-  .btn-group {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    gap:10px;
-    flex-wrap:nowrap;
-  }
-
-  .btn-primary,
-  .btn-secondary {
-    padding:12px 24px;
-    font-size:0.95rem;
-    flex:1; /* makes buttons share space equally */
-  }
-
-}
-
 }
 
 /* Fade in animation for mobile (since no slideIn) */
@@ -574,6 +471,7 @@ nav {
     transform: translateY(0);
   }
 }
+
  /* ===============================
     SECTIONS
   =============================== */
