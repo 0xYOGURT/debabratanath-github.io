@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
 </head>
 
 <body>
@@ -72,44 +73,298 @@
     </div>
   </div>
 </section>
-<!-- SKILLS SECTION -->
-<section id="skills" class="section" aria-label="Skills">
-  <div class="container">
-    <h2>Skills</h2>
 
-    <div class="card">
-      <p><b>Programming:</b> C, C++, Java, Python</p>
-      <p><b>Tools:</b> Git, GitHub, VS Code</p>
-      <p><b>Design:</b> Photoshop, Illustrator</p>
+<!-- ABOUT ME SECTION -->
+<section id="about" class="about-section">
+  <div class="container-custom">
+    <div class="about-wrapper">
+      <!-- Left Side - Title -->
+      <div class="about-left">
+        <h2 class="about-title">About Me</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <!-- Right Side - Content -->
+      <div class="about-right">
+        <p class="about-main-text">
+          I am a dedicated Computer Science student with a focus on full-stack development. 
+          I enjoy solving complex problems and turning ideas into reality through clean and efficient code.
+        </p>
+
+        <p class="about-sub-text">
+          Currently exploring the intersection of modern UI/UX design and scalable backend architectures. 
+          My approach blends technical rigor with a keen eye for aesthetics, ensuring that every project 
+          I touch is both robust and delightful to use. I believe in the power of open source and lifelong learning.
+        </p>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">2+</div>
+            <div class="stat-label">Years Exp.</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-value">5+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-value">∞</div>
+            <div class="stat-label">Coffee Cups</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- EXPERTISE & TOOLS SECTION -->
+<section id="skills" class="skills-section">
+  <div class="container-custom">
+    <!-- Section Header -->
+    <div class="skills-header">
+      <h2 class="skills-title">Expertise & Tools</h2>
+      <p class="skills-subtitle">
+        A comprehensive set of technologies I use to build world-class<br>
+        digital products.
+      </p>
+    </div>
+
+    <!-- Skills Cards Grid -->
+    <div class="skills-grid">
+      <!-- Card 1: Programming Languages -->
+      <div class="skill-card">
+        <h3 class="skill-card-title">Programming Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Rust</span>
+          <span class="skill-tag">Go</span>
+          <span class="skill-tag">Python</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Frameworks -->
+      <div class="skill-card">
+        <h3 class="skill-card-title">Frameworks</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Qt</span>
+          <span class="skill-tag">SpringBoot</span>
+          <span class="skill-tag">Rails</span>
+          <span class="skill-tag">Oracle</span>
+        </div>
+      </div>
+
+      <!-- Card 3: DevOps  -->
+      <div class="skill-card">
+        <h3 class="skill-card-title">DevOps & Infrastructure</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+
+      <!-- Card 4: Design & UI/UX -->
+      <div class="skill-card">
+        <h3 class="skill-card-title">Design & UI/UX</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Adobe Illustrator</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 <!-- PROJECTS SECTION -->
-<section id="projects" class="section" aria-label="Projects">
-  <div class="container">
-    <h2>Projects</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Project 1</h3>
-        <p>Short description of your project.</p>
+<!-- PROJECTS SECTION - Carousel Style -->
+<section id="projects" class="projects-carousel-section">
+  <div class="container-custom">
+    <!-- Section Header -->
+    <div class="carousel-header">
+      <div class="carousel-header-left">
+        <h2 class="carousel-title">Selected Works</h2>
+        <p class="carousel-subtitle">A showcase of recent engineering projects.</p>
       </div>
-
-      <div class="card">
-        <h3>Project 2</h3>
-        <p>Short description of your project.</p>
+      <div class="carousel-controls">
+        <button class="carousel-btn prev" aria-label="Previous">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="carousel-btn next" aria-label="Next">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
       </div>
+    </div>
 
-      <div class="card">
-        <h3>Project 3</h3>
-        <p>Short description of your project.</p>
-      </div>
+    <!-- Projects Carousel -->
+    <div class="projects-carousel">
+      <div class="carousel-track">
+        <!-- Project Slide 1 -->
+        <div class="carousel-slide">
+          <div class="slide-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Analytics Dashboard">
+          </div>
+          <div class="slide-content">
+            <div class="slide-meta">
+              <span class="slide-number">01</span>
+              <span class="slide-category">WEB APP • 2024</span>
+            </div>
+            <h3 class="slide-title">Analytics Dashboard</h3>
+            <p class="slide-description">
+              Real-time data visualization platform with interactive charts, custom reports, and team collaboration features.
+            </p>
+            <div class="slide-tags">
+              <span class="slide-tag">React</span>
+              <span class="slide-tag">D3.js</span>
+              <span class="slide-tag">Node.js</span>
+            </div>
+            <a href="#" class="slide-link">View Project →</a>
+          </div>
+        </div>
 
-      <div class="card">
-        <h3>Project 4</h3>
-        <p>Short description of your project.</p>
+        <!-- Project Slide 2 -->
+        <div class="carousel-slide">
+          <div class="slide-image">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop" alt="E-Commerce Platform">
+          </div>
+          <div class="slide-content">
+            <div class="slide-meta">
+              <span class="slide-number">02</span>
+              <span class="slide-category">E-COMMERCE • 2024</span>
+            </div>
+            <h3 class="slide-title">E-Commerce Platform</h3>
+            <p class="slide-description">
+              Full-stack online shopping solution with secure payments, inventory management, and AI-powered recommendations.
+            </p>
+            <div class="slide-tags">
+              <span class="slide-tag">Next.js</span>
+              <span class="slide-tag">Stripe</span>
+              <span class="slide-tag">MongoDB</span>
+            </div>
+            <a href="#" class="slide-link">View Project →</a>
+          </div>
+        </div>
+
+        <!-- Project Slide 3 -->
+        <div class="carousel-slide">
+          <div class="slide-image">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop" alt="Mobile Fitness App">
+          </div>
+          <div class="slide-content">
+            <div class="slide-meta">
+              <span class="slide-number">03</span>
+              <span class="slide-category">MOBILE APP • 2024</span>
+            </div>
+            <h3 class="slide-title">Fitness Tracker</h3>
+            <p class="slide-description">
+              Cross-platform mobile app for tracking workouts, nutrition goals, and progress with personalized coaching.
+            </p>
+            <div class="slide-tags">
+              <span class="slide-tag">React Native</span>
+              <span class="slide-tag">Firebase</span>
+              <span class="slide-tag">ML Kit</span>
+            </div>
+            <a href="#" class="slide-link">View Project →</a>
+          </div>
+        </div>
+
+        <!-- Project Slide 4 -->
+        <div class="carousel-slide">
+          <div class="slide-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Task Management">
+          </div>
+          <div class="slide-content">
+            <div class="slide-meta">
+              <span class="slide-number">04</span>
+              <span class="slide-category">SAAS • 2023</span>
+            </div>
+            <h3 class="slide-title">Project Management Tool</h3>
+            <p class="slide-description">
+              Collaborative workspace for teams with kanban boards, time tracking, and automated workflow management.
+            </p>
+            <div class="slide-tags">
+              <span class="slide-tag">Vue.js</span>
+              <span class="slide-tag">GraphQL</span>
+              <span class="slide-tag">PostgreSQL</span>
+            </div>
+            <a href="#" class="slide-link">View Project →</a>
+          </div>
+        </div>
+
+        <!-- Project Slide 5 -->
+        <div class="carousel-slide">
+          <div class="slide-image">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=600&fit=crop" alt="AI Chatbot">
+          </div>
+          <div class="slide-content">
+            <div class="slide-meta">
+              <span class="slide-number">05</span>
+              <span class="slide-category">AI/ML • 2023</span>
+            </div>
+            <h3 class="slide-title">AI Customer Support</h3>
+            <p class="slide-description">
+              Intelligent chatbot with natural language processing for automated customer service and lead generation.
+            </p>
+            <div class="slide-tags">
+              <span class="slide-tag">Python</span>
+              <span class="slide-tag">TensorFlow</span>
+              <span class="slide-tag">FastAPI</span>
+            </div>
+            <a href="#" class="slide-link">View Project →</a>
+          </div>
+        </div>
+
+        <!-- Project Slide 6 -->
+        <div class="carousel-slide">
+          <div class="slide-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Blockchain App">
+          </div>
+          <div class="slide-content">
+            <div class="slide-meta">
+              <span class="slide-number">06</span>
+              <span class="slide-category">BLOCKCHAIN • 2023</span>
+            </div>
+            <h3 class="slide-title">Crypto Wallet</h3>
+            <p class="slide-description">
+              Secure cryptocurrency wallet with multi-chain support, NFT management, and decentralized exchange integration.
+            </p>
+            <div class="slide-tags">
+              <span class="slide-tag">Web3.js</span>
+              <span class="slide-tag">Solidity</span>
+              <span class="slide-tag">React</span>
+            </div>
+            <a href="#" class="slide-link">View Project →</a>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <span class="indicator active"></span>
+      <span class="indicator"></span>
+      <span class="indicator"></span>
+      <span class="indicator"></span>
+      <span class="indicator"></span>
+      <span class="indicator"></span>
+    </div>
+
+    <!-- View All Link -->
+    <div class="carousel-footer">
+      <a href="#all-projects" class="view-all-link">
+        View All Projects
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
     </div>
   </div>
 </section>
